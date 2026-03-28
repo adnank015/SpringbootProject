@@ -29,6 +29,7 @@ public class adnanController {
          model.addAttribute("jobPosts", jobs);
         return "viewalljobs";
      }
+     //this is controller
      @PostMapping("/handleForm")
      public String handleForm(JobPost jobPost){
         jobService.addjob(jobPost);
